@@ -1,5 +1,7 @@
 # EVEData Documentation
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Python](https://img.shields.io/badge/python-3.13-blue)](https://www.python.org) [![MkDocs](https://img.shields.io/badge/MkDocs-Material-blue)](https://squidfunk.github.io/mkdocs-material/)
+
 **[View the docs →](https://docs.evedata.io)**
 
 ## Setup
@@ -29,10 +31,10 @@ npm install
 Run a local development server:
 
 ```sh
-uv run mkdocs serve
+make dev
 ```
 
-This starts a server that will be accessible via <http://localhost:8000> in your browser. Any changes made within the project will automatically reload any browser tabs.
+This starts a server that will be accessible via <http://localhost:8080> in your browser. Any changes made within the project will automatically reload any browser tabs.
 
 ## Deployment
 

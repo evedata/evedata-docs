@@ -55,6 +55,9 @@ jobs:
           sparse-checkout: |
             docs
             includes
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
@@ -84,7 +87,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: versions upload --preview-alias pr-${{ github.event.pull_request.number }}
+          command: versions upload --env development --preview-alias pr-${{ github.event.pull_request.number }}
 
   deploy-staging:
     environment: staging
@@ -99,6 +102,9 @@ jobs:
           sparse-checkout: |
             docs
             includes
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
@@ -143,6 +149,9 @@ jobs:
           sparse-checkout: |
             docs
             includes
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:

@@ -2,6 +2,8 @@ name = "evedata-docs"
 compatibility_date = "2025-04-01"
 preview_urls = true
 
+[env.development]
+
 [env.production]
 route = { pattern = "docs.evedata.io", custom_domain = true }
 

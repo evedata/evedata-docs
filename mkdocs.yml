@@ -78,7 +78,7 @@ plugins:
       enabled: !ENV [CI, false]
   - search:
       lang: en
-  # - social
+  - social
   - tags
 
 markdown_extensions:

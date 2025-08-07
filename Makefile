@@ -11,7 +11,7 @@ deploy-production: build
 	pnpm run deploy:production
 
 dev:
-	uv run mkdocs serve -a localhost:8080
+	DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib uv run mkdocs serve -a localhost:8080
 
 fix: fix-markdown fix-python
 

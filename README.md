@@ -31,10 +31,10 @@ npm install
 Run a local development server:
 
 ```sh
-uv run mkdocs serve
+make dev
 ```
 
-This starts a server that will be accessible via <http://localhost:8000> in your browser. Any changes made within the project will automatically reload any browser tabs.
+This starts a server that will be accessible via <http://localhost:8080> in your browser. Any changes made within the project will automatically reload any browser tabs.
 
 ## Deployment
 

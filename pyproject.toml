@@ -72,3 +72,4 @@ required-imports = ["from __future__ import annotations"]
 [tool.uv]
 default-groups = ["dev"]
 package = false
+required-version = ">=0.8.0,<0.9"

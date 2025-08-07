@@ -6,6 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+# UV-generated files
+requirements.txt
+
 # Virtual environments
 .venv
 

@@ -4,8 +4,11 @@ build: pip-requirements
 clean:
 	rm -rf dist site .cache .ruff_cache .pytest_cache
 
-deploy:
-	pnpm run deploy
+deploy-staging: build
+	pnpm run deploy:staging
+
+deploy-production: build
+	pnpm run deploy:production
 
 dev:
 	uv run mkdocs serve -a localhost:8080

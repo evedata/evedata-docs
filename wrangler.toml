@@ -1,5 +1,6 @@
 name = "evedata-docs"
 compatibility_date = "2025-04-01"
+preview_urls = true
 
 [env.production]
 route = { pattern = "docs.evedata.io", custom_domain = true }
@@ -11,4 +12,3 @@ route = { pattern = "docs.evedata.dev", custom_domain = true }
 [assets]
 directory = "./site"
 not_found_handling = "404-page"
-binding = "ASSETS"

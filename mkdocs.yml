@@ -135,6 +135,7 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
   - Blog:
       - blog/index.md

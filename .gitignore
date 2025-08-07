@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Node.js dependencies
+node_modules/
+
+# MkDocs-generated files
+.cache/
+site/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.staging
